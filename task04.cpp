@@ -25,5 +25,12 @@
 */
 
 int task04(int number) {
-	return 0;
+
+	if (number > -100 && number < 100) {
+		return 0;
+	}
+
+	int hundreds = (number % 1000) / 100;
+
+	return abs(hundreds);
 }
