@@ -22,5 +22,11 @@
 */
 
 int task01(int seeker, int coin) {
-	return 0;
+
+	if (seeker < 0 || coin < 0) {
+		cout << "Out of range.";
+		return -1;
+	}
+
+	return coin / seeker;
 }
