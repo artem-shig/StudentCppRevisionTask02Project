@@ -27,17 +27,13 @@
 
 int taskX(int number) {
 
-	if (number < 0) {
+	if (number <= 0) {
 		return -1;
 	}
 
 	int res = 0;
 
-	do {
-		number++;
-		res = number % 2 == 0 ? number : res;
-
-	} while (number % 2 != 0);
+	res = number % 2 == 0 ? number + 2 : number + 1;
 
 	return res;
 }
