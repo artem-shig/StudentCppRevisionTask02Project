@@ -25,5 +25,12 @@
 */
 
 int task03(int number) {
-	return 0;
+
+	if (number > -10 && number < 10) {
+		return 0;
+	}
+
+	int tens = (number % 100) / 10;
+
+	return abs(tens);
 }
