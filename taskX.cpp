@@ -31,9 +31,5 @@ int taskX(int number) {
 		return -1;
 	}
 
-	int res = 0;
-
-	res = number % 2 == 0 ? number + 2 : number + 1;
-
-	return res;
+	return number % 2 == 0 ? number + 2 : number + 1;
 }
